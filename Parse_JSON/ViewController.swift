@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         var rateing = ""
         let newString = aString!.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
         print(newString)
-        let url = "http://www.omdbapi.com/?apikey=BanMePlz&t=\(newString)"
+        let url = "http://www.omdbapi.com/?apikey=PlzBanMe&t=\(newString)"
         let urlObj = URL(string:url)
         //print (urlObj)
         URLSession.shared.dataTask(with:urlObj!){(data,response,error) in
